@@ -1,0 +1,92 @@
+<h1 id="why-rust">Why Rust?</h1>
+<p>Bart Massey 2023</p>
+<ul>
+<li><p>Hundreds people have made the case for Rust, so this document
+needs to be special</p></li>
+<li><p>Rust is usually said to be about memory safety without GC, which
+is its big deal</p></li>
+<li><p>I will argue that even without this it has big advantages for
+large projects, especially low-level ones</p></li>
+</ul>
+<h2 id="modularity">Modularity</h2>
+<ul>
+<li><p>Rust is a truly modular language. That is, Rust has support for
+namespace-based modules as part of the language: no preprocessor (C/C++)
+or simple inclusion (Python)</p></li>
+<li><p>Rust has built-in support for compiling standalone packages ("lib
+crates") that integrate smoothly and are source-portable</p></li>
+</ul>
+<h2 id="third-party-crates">Third-Party Crates</h2>
+<ul>
+<li><p>Rust has a package-manager-style ecosystem using Cargo
+("<code>crates.io</code>"). This is the default way to use the
+language</p></li>
+<li><p><code>crates.io</code> quality tends to be decent and
+well-managed</p></li>
+<li><p><code>crates.io</code> is not <em>required</em> for external
+crates</p>
+<ul>
+<li>Crates can be accessed directly with git by Cargo</li>
+<li>Crates can be vendored as part of a project</li>
+<li>Bespoke <code>crates.io</code> instances can be used</li>
+</ul></li>
+<li><p>Rust's crate interfaces tend to be reasonably narrow</p></li>
+<li><p>Rustdoc is really good, enabling easy use</p></li>
+</ul>
+<h2 id="errors-are-caught-early">Errors Are Caught Early</h2>
+<ul>
+<li><p>Errors that can reasonably be detected at compile time mostly
+are</p></li>
+<li><p>Errors that slip through and can be detected at runtime almost
+always are. In particular, no UB in safe Rust, just panics</p></li>
+</ul>
+<h2 id="rusts-standard-library-is-sweet">Rust's Standard Library Is
+Sweet</h2>
+<ul>
+<li><p>Good choices about what belongs in</p></li>
+<li><p>Extremely well built and and documented</p></li>
+<li><p>"Favored crates" style allows <code>std</code> stability while
+making good things available</p></li>
+</ul>
+<h2 id="rust-has-a-good-standard-style">Rust Has A Good Standard
+Style</h2>
+<ul>
+<li><p>Rustdoc is fairly mandatory</p></li>
+<li><p>Compiler lints plus Clippy enforce style guidelines</p></li>
+<li><p>Rustfmt enforces code formatting</p></li>
+<li><p>Community ethos is to use all this</p></li>
+</ul>
+<h2 id="rust-encourages-disciplined-data-design">Rust Encourages
+Disciplined Data Design</h2>
+<ul>
+<li><p>Some anti-patterns in data design, such as weird interlinking of
+data structures through pointers ("spaghetti data") are very difficult
+to implement in Rust</p></li>
+<li><p>Rust's module interface style encourages narrow, well-defined
+data interactions</p></li>
+</ul>
+<h2 id="rust-integrates-well-with-cc">Rust Integrates Well with
+C/C++</h2>
+<ul>
+<li><p>No need to "rewrite the world" to work with Rust in existing
+projects</p></li>
+<li><p>Targeting Rust to pain points is nice</p></li>
+</ul>
+<h2 id="rusts-people-are-amazing">Rust's People Are Amazing</h2>
+<ul>
+<li><p>Organized effort to make a friendly, people-safe
+ecosystem</p></li>
+<li><p>Sincere desire to bring people in and help them</p></li>
+<li><p>Ability to directly influence the language and ecosystem</p></li>
+</ul>
+<h2 id="the-counter-argument-for-cc">The Counter-Argument For C/C++</h2>
+<ul>
+<li><p>Rust is a complicated language compared to C</p></li>
+<li><p>Rust lacks some C++ "power features", notably around template
+typing. Some substitutes are available&#x2026;</p></li>
+<li><p>C/C++ has a ginormous ecosystem &#x2014; albeit hard to access and
+integrate</p></li>
+<li><p>Learning a new language is a pain. Rust's learning difficulty is
+overrated, but still very real</p></li>
+<li><p>Rust can make you feel dumb. Humility is required</p></li>
+</ul>
