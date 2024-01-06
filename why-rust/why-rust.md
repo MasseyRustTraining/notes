@@ -103,3 +103,7 @@ Bart Massey 2023
   difficulty is overrated, but still very real
 
 * Rust can make you feel dumb. Humility is required
+
+## Oh Yeah, The Memory Safety Thing
+
+* It really is a big deal
