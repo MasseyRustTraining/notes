@@ -1,0 +1,47 @@
+<h1 id="getting-started-with-rust">Getting Started With Rust</h1>
+<p>It's easy enough to get started with Rust on a variety of platforms.
+All are fairly similar.</p>
+<h2 id="getting-started-with-rust-on-windows">Getting Started With Rust
+On Windows</h2>
+<ul>
+<li><p>If you are using an existing code editor or IDE you are fond of,
+look into how to set it up for Rust. (I use emacs, which works&#x2026; OK.)
+There are great Rust tutorials online for most of these.</p>
+<p>If in doubt, install Visual Studio Code from the Microsoft App Store.
+Then install the official <code>Rust Analyzer</code> plugin from
+rust-lang.org. Do not install any other Rust plugins at this stage:
+there's some janky stuff floating around. There's some information on
+setup at</p>
+<ul>
+<li><a
+href="https://code.visualstudio.com/docs/languages/rust">https://code.visualstudio.com/docs/languages/rust</a></li>
+<li><a
+href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer">https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer</a></li>
+</ul></li>
+<li><p>Now go to <a href="https://rustup.rs">https://rustup.rs</a> and
+download and run <code>rustup.exe</code>. I know this is a bit scary,
+but it is all well protected by PKI and will do nothing less benign than
+install Rust on your machine via Rustup.</p>
+<p>The installer will open a terminal and run on the command line: it is
+fine to hit return and take the defaults for the install. Once the
+installation completes, close the terminal, open a new terminal, and say
+<code>rustc --version</code>. If all is well, you should see the version
+number of the latest Rust.</p></li>
+<li><p>You can now create new Rust programs and libraries with
+<code>cargo new</code>:</p>
+<ul>
+<li><p>Say <code>cargo new --bin myprogram</code> to create a Rust
+program called <code>myprogram</code>.</p></li>
+<li><p>Say <code>cargo new --lib myprogram</code> to create a Rust
+library called <code>myprogram</code>.</p></li>
+</ul>
+<p>You may also be able to create new programs and libraries from your
+IDE.</p></li>
+<li><p>In VSCode you can File &#xBB; Open Folder and then navigate to a Rust
+directory to open it as a Rust project.</p></li>
+</ul>
+<h2 id="getting-started-with-rust-on-linux-wsl-mac">Getting Started With
+Rust On Linux, WSL, Mac</h2>
+<p>The instructions here can be very similar to the Windows
+instructions. Go to <code>https://rustup.rs</code> to install Rust,
+install whatever IDE / Editor and support you want, and off you go.</p>
