@@ -7,6 +7,17 @@ likely change rapidly.
 Times in parens are hours and minutes for the topic. `[day
 1]` etc are course days. Links are to associated material.
 
+## Course Days
+
+1. Wednesday 8 January
+2. Friday 10 January
+3. Monday 13 January
+4. Wednesday 15 January
+5. Friday 17 January
+6. Monday 20 January
+7. Wednesday 22 January
+8. Friday 24 January
+
 ## Schedule (20:55)
 
 * Rust review (10:30)
@@ -20,7 +31,7 @@ Times in parens are hours and minutes for the topic. `[day
       * Structs (:15)
       * Enums (:20)
       * Method syntax and semantics (:20)
-    * Exercise (:30)
+    * Exercise: [Rule 110] (:30)
   * Structured types [day 2] (2:25)
     * Ownership, lifetimes and borrowing (1:55)
       * Rust memory model [[memory and moves]] (:15)
@@ -133,3 +144,4 @@ Times in parens are hours and minutes for the topic. `[day
 [embassy]: https://embassy.dev/book/
 [trait sealing]: https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/
 [typestate]: https://cliffle.com/blog/rust-typestate/
+[Rule 110]: https://github.com/MasseyRustTraining/rule-110
