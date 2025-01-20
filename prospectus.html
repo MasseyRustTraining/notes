@@ -106,78 +106,64 @@ href="https://google.github.io/comprehensive-rust/error-handling">errors</a>]
 </ul></li>
 <li><p>Rust software development [day 5] (2:55)</p>
 <ul>
-<li>Code Checking and Testing [<a
+<li>Code Checking, Testing, Benchmarking, Debugging [<a
 href="https://github.com/trifectatechfoundation/teach-rs/blob/main/content/mods/B-crate-engineering/topics/testing/slides.md">testing</a>]
 (:15)</li>
 <li>Crates and modules [<a
 href="https://google.github.io/comprehensive-rust/modules">modules</a>]
 (:15)</li>
-<li>Libraries (1:25)
+<li>Libraries (:55)
 <ul>
-<li><code>std</code> and <code>core</code> (:15)</li>
-<li>Cargo and <code>crates.io</code> (:15)</li>
-<li>A tour of <code>std</code> and <code>crates.io</code> (:30)</li>
-<li>Cargo <code>features</code> (:10)</li>
-<li>Example: command-line argument parsing [<a
-href="https://docs.rs/clap/latest/clap/_derive/_tutorial/chapter_0/index.html">clap</a>]
+<li><code>std</code>, <code>core</code> and <code>alloc</code>
 (:15)</li>
+<li>Cargo and <code>crates.io</code> (:15)</li>
+<li>A tour of <code>std</code> and <code>crates.io</code> (:15)</li>
+<li>Cargo <code>features</code> (:10)</li>
 </ul></li>
 <li>Exercise: Rust project code reading (1:00)</li>
 </ul></li>
-<li><p>Generic object programming [day 6] (2:40)</p>
+<li><p>"Advanced" Rust [day 6] (2:35)</p>
 <ul>
-<li>Fancy traits (1:10)
+<li>Flexible programming (1:10)
+<ul>
+<li>Fancy traits (:30)
 <ul>
 <li>Trait objects [<a
 href="https://github.com/trifectatechfoundation/teach-rs/blob/main/content/mods/A-foundations/topics/trait-objects/slides.md">trait
-objects</a>] (:30)</li>
-<li>Operator traits [<a
-href="https://github.com/pdx-cs-rust/rust-course-notes/blob/main/old/05-2-op-traits.md">operators</a>]
-(:20)</li>
+objects</a>] (:15)</li>
 <li>Deref and related traits [<a
 href="https://github.com/pdx-cs-rust/rust-course-notes/blob/main/old/05-4-share-traits.md">deref</a>]
-(:20)</li>
+(:15)</li>
 </ul></li>
-<li>Closures and iterators (1:00)
+<li>Closures and iterators (:40)
 <ul>
 <li>Closures [<a
 href="https://github.com/pdx-cs-rust/rust-course-notes/blob/main/old/06-1-closures.md">closures</a>]
-(:30)</li>
+(:20)</li>
 <li>Iterators [<a
 href="https://google.github.io/comprehensive-rust/iterators">iterators</a>]
-(:30)</li>
+(:20)</li>
 </ul></li>
-<li>Exercise (:30)</li>
 </ul></li>
-<li><p>Stability (:35)</p>
-<ul>
-<li>Semantic versioning [<a
-href="https://doc.rust-lang.org/cargo/reference/semver.html">semver</a>]
-(:10)</li>
-<li>API stability [<a
-href="https://rust-lang.github.io/api-guidelines/necessities.html#c-stable">stable</a>]
-(:15)</li>
-<li>Editions [<a
-href="https://doc.rust-lang.org/edition-guide/">editions</a>] (:10)</li>
-</ul></li>
-<li><p>Exercise (:15)</p></li>
-<li><p>Unsafe and Embedded [day 7] (2:30)</p>
+<li>Unsafe and <code>no_std</code> (:55)
 <ul>
 <li>Unsafe fundamentals [<a
 href="https://google.github.io/comprehensive-rust/unsafe-rust">unsafe</a>]
-(:30)
+(:40)
 <ul>
-<li>Basics, safety docs (:15)</li>
-<li>Nightly (:5)</li>
-<li>Miri (:10)</li>
+<li>Basics, safety docs (:30)</li>
+<li>Nightly (:10)</li>
 </ul></li>
-<li>Embedded programming [<a
-href="https://rust-embedded.github.io/discovery-mb2">embedded</a>] (:50)
-<ul>
 <li><code>nostd</code> (:15)</li>
+</ul></li>
+<li>Exercise: Real-time scheduler (:30)</li>
+</ul></li>
+<li><p>Embedded Programming [day 7] (2:45)</p>
+<ul>
+<li>Bare Metal Programming (1:15)
+<ul>
 <li>PAC (:15)</li>
 <li>HAL (:20)</li>
-</ul></li>
 <li>Peripheral sharing (:20)
 <ul>
 <li><code>Arc, Mutex</code> (:10)</li>
@@ -188,32 +174,27 @@ href="https://docs.embassy.dev/embassy-stm32/git/stm32f102rb/struct.PeripheralRe
 <li>FFI [<a
 href="https://github.com/trifectatechfoundation/teach-rs/blob/main/content/mods/E-rust-for-systems/topics/ffi/slides.md">ffi</a>]
 (:20)</li>
-<li>Exercise (:30)</li>
 </ul></li>
-<li><p>Async/await [<a
+<li>Async/await [<a
 href="https://github.com/trifectatechfoundation/teach-rs/tree/main/content/mods/C-multitasking">async-await</a>]
-[day 8] (2:45)</p>
+[day 8] (1:00)
 <ul>
-<li>Top-half: user view (:45)</li>
-<li>Bottom-half: implementor view (:30)</li>
-<li>Embassy [<a href="https://embassy.dev/book/">embassy</a>] (1:00)
-<ul>
-<li>Embassy basics (:30)</li>
-<li>Embassy async/await (:30)</li>
+<li>Top-half: user view (:30)</li>
+<li>Embassy [<a href="https://embassy.dev/book/">embassy</a>] (:30)</li>
 </ul></li>
 <li>Exercise (:30)</li>
 </ul></li>
-<li><p>Rust Design Patterns [day 9] (2:25)</p>
+<li><p>Rust Design Patterns [day 8] (2:15)</p>
 <ul>
+<li>Functional programming (:30)</li>
 <li>Trait Sealing [<a
 href="https://predr.ag/blog/definitive-guide-to-sealed-traits-in-rust/">trait
 sealing</a>] (:15)</li>
-<li>Marker Traits (1:10)
+<li>Marker Traits (:30)
 <ul>
-<li><code>Copy</code> (:20)</li>
-<li><code>Sized</code> (:10)</li>
+<li><code>Copy</code> (:05)</li>
+<li><code>Sized</code> (:05)</li>
 <li><code>Send</code> and <code>Sync</code> (:20)</li>
-<li><code>PhantomData</code> (:20)</li>
 </ul></li>
 <li>Typestate Driven Programming [<a
 href="https://cliffle.com/blog/rust-typestate/">typestate</a>]
